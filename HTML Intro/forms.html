@@ -18,21 +18,22 @@
         <button type="button">useless button</button>
         <p>
             <label for="username">Enter a username:</label>
-            <input id="username" type="text" placeholder="username">
+            <!-- type in "chickenfan" in username box leads to file:///tacos?username=chickenfan -->
+            <input id="username" type="text" placeholder="username" name="username">
         </p>
         <p>
             <label for="password">Enter a password:</label>
-            <input id="password" type="password" placeholder="password">
+            <input id="password" type="password" placeholder="password" name="password">
         </p>
         <!-- button type is sumbit, but submit is the default anyways -->
         <button type="submit">middle button</button>
         <p>
             <label for="color">Enter a color:</label>
-            <input id="color" type="color">
+            <input id="color" type="color" name="color">
         </p>
         <p>
             <label for="number">Pick a number:</label>
-            <input id="number" type="number" placeholder="enter a number">
+            <input id="number" type="number" placeholder="enter a number" name="number">
         </p>
         <!-- button has default submit action without type included -->
         <button>Submit will default to submit form to the action</button>
