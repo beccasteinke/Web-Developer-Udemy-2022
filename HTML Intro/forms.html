@@ -41,6 +41,32 @@
         <input type="submit" value="Click me!">
     </form>
 
+    <br>
+    <br>
+    <h2>Form Hijacking</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <!-- sends to https://www.reddit.com/search?query=dog which DOES NOT WORK -->
+        <input type="text" name="query">
+        <button>Search Reddit (does not work)</button>
+        <br>
+        <!-- works because the name is the same that Reddit actually uses -->
+        <input type="text" name="q">
+        <button>Search Reddit works!</button>
+
+    </form>
+    <h3>Search Google</h3>
+    <!-- google search -->
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <!-- search youtube: notice the name is different than reddit and google -->
+    <form action="https://youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
 </body>
 
 </html>
