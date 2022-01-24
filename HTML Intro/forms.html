@@ -11,7 +11,11 @@
 <body>
 
     <h1>Forms Demo</h1>
+    <!-- button does nothing because it is outside of form -->
+    <button>not inside form</button>
     <form action="/tacos">
+        <!-- button does nothing because the type is button -->
+        <button type="button">useless button</button>
         <p>
             <label for="username">Enter a username:</label>
             <input id="username" type="text" placeholder="username">
@@ -20,6 +24,8 @@
             <label for="password">Enter a password:</label>
             <input id="password" type="password" placeholder="password">
         </p>
+        <!-- button type is sumbit, but submit is the default anyways -->
+        <button type="submit">middle button</button>
         <p>
             <label for="color">Enter a color:</label>
             <input id="color" type="color">
@@ -28,6 +34,10 @@
             <label for="number">Pick a number:</label>
             <input id="number" type="number" placeholder="enter a number">
         </p>
+        <!-- button has default submit action without type included -->
+        <button>Submit will default to submit form to the action</button>
+        <!-- another way to create a submit button but it is more cumbersome - harder to change text in button -->
+        <input type="submit" value="Click me!">
     </form>
 
 </body>
