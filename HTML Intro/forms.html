@@ -115,6 +115,21 @@
             <textarea name="requests" id="requests" cols="30" rows="10" placeholder="type something here"></textarea>
         </p>
         <button>Submit</button>
+        <h2>Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter first name:</label>
+            <input type="text" id="first" name="first" required>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <!-- pattern matching, easy regular expression with built in patterns in input types -->
+                <input type="email" required placeholder="email">
+                <input type="url" required placeholder="url">
+            </p>
+            <button>Submit</button>
+        </form>
     </form>
 </body>
 
