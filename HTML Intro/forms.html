@@ -67,6 +67,46 @@
         <input type="text" name="search_query">
         <button>Search Youtube</button>
     </form>
+
+    <h2>More inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything!</label>
+        <p>
+            <!-- on submit: file:///birds?agree_tos=on&size=on -->
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m">
+        </p>
+        <button>Submit</button>
+
+    </form>
+    <form action="/birdshirt">
+        <input type="checkbox" name="ship" id="ship" checked>
+        <label for="ship">Ship that shit to me</label>
+        <p>
+            <!-- adding value attribute -> on submit: file:///birdshirt?size=m -->
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please select meal type</label>
+            <select name="meal" id="meal">
+                <option value="">--Please choose an option--</option>
+                <option value="steak">Steak</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+            </select>
+        </p>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
