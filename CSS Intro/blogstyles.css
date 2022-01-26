@@ -1,0 +1,89 @@
+body {
+    background-color: #f1faee;
+}
+
+h1, h2 {
+    color: #1d3557;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tags {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 50%;
+}
+
+.post a {
+    color: #457b9d;
+}
+/* any anchor tag that is within a footer. This includes a tags that are within other tags, as long as they are still within the footer */
+footer a {
+    color: #e63946;
+}
+
+input + button {
+    background-color: pink;
+}
+
+h2 + button {
+    background-color: purple;
+    font-size: 20px;
+}
+/* any anchor tag that is a direct child of a footer (a tags within the li's are not considered a direct descendant */
+footer > a {
+    color: black;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* section.post will do the same thing */
+section[class="post"] {
+    background-color: purple;
+}
+
+a:hover {
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+button:hover {
+    color:darkgoldenrod;
+    background-color: black;
+}
+
+.post button:hover {
+    background-color: darkgray;
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color:darkseagreen;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+h2::first-letter{
+    font-size: 50px;
+}
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
